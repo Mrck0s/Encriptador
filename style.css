@@ -1,0 +1,198 @@
+html{
+    height: 100%;
+    background-color: black;
+}
+body{
+    width: 100%;
+    height: 100%;
+}
+/*Codigo Header*/
+header{
+    width: 100%;
+    height: 15%;
+    background-color: black;
+}
+.titulo{
+    color: rgb(0, 255, 255);
+    margin-left: 22%;
+    font-size: 25px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: oblique;
+}
+.logo{
+    display: inline-block;
+    margin-top: 1%;
+    margin-left: 5%;
+}
+/*Codigo Main*/
+main{
+    width: 100%;
+    height: 70%;
+    background-color: black;
+    display: inline-block;
+}
+textarea{
+    border-radius: 15px;
+    border-width: 0;
+    outline: none;
+    resize: none;
+    font-size: 20px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    line-height: 18px;
+    padding-top: 2%;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+.izquierda{
+    width: 60%;
+    height: 100%;
+    display: inline-block;
+    background-color: black;
+}
+.mensaje{
+    display: block;
+    margin: 3.5% auto;
+    width: 70%;
+    height: 60%;
+    background-color: black;
+    color: rgb(0, 255, 255);
+    box-shadow: 2px 2px 20px rgb(0, 255, 255);
+}
+.mensaje::placeholder{
+    color: rgb(0, 255, 255);
+    font-style: italic;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.condicion{
+    display: block;
+    margin-top: 0%;
+    margin-left: 15%;
+    font-size: 15px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: italic;
+    color: rgb(0, 255, 255);
+}
+
+.derecha{
+    width: 35%;
+    height: 100%;
+    display: inline-block;
+    background-color: black;
+}
+.resultado{
+    display: block;
+    margin: 3.5% auto;
+    width: 70%;
+    height: 60%;
+    color: goldenrod;
+    box-shadow: 2px 2px 20px goldenrod;
+    background-color: black;
+    background-image: url(imagenes/Muñecomuñeco.png);
+    background-repeat: no-repeat;
+    background-size: 70%;
+    background-position: center;
+}
+.resultado:focus{
+    background: fixed;
+}
+.resultado::placeholder{
+    color: goldenrod;
+    font-style: italic;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.rst{
+    display: block;
+    margin-top: 8.5%;
+    text-align: center;
+    font-size: 15px;
+    font-style: italic;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: goldenrod;
+}
+button{
+    width: auto;
+    padding: 2%;
+    margin: 2%;
+    cursor: pointer;
+    background: transparent;
+    border-radius: 15px;
+    border-width: 0;
+    outline: none;
+    font-size: 18px;
+    font-style: italic;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    transition: 500ms all ;
+}
+.izquierda button{
+    margin-top: 6%;
+    margin-left: 15%;
+    color: rgb(0, 255, 255);
+    border: 1px solid rgb(0, 255, 255);
+}
+.izquierda button:hover{
+    color: black;
+    background-color: rgb(0, 255, 255);
+    transform: scale(1.05);
+}
+.derecha button{
+    display: block;
+    margin: 5% auto;
+    color: goldenrod;
+    border: 1px solid goldenrod;
+}
+.derecha button:hover{
+    color: black;
+    background-color: goldenrod;
+    transform: scale(1.05);
+}
+/*Codigo Footer*/
+footer{
+    width: 100%;
+    height: 15%;
+    background-color: black;
+    text-align: center;
+}
+.letraM{
+    width: 5%;
+    margin: 0.5%;
+}
+.pie{
+    margin: 0.5% auto;
+    color: white;
+    font-size: 12px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+/*Comportamiento responsivo*/
+
+@media screen and (max-width:420px) {
+    header{
+        margin-top: 3%;
+        height: auto;
+    }
+    .logo{
+        width: 10%;
+        margin-top: 0;
+        margin-bottom: 5%;
+        margin-left: 45%;
+    }
+    .izquierda{
+        display: block;
+        width: auto;
+        height: 80%;
+        margin-top: 10%;
+    }
+    .derecha{
+        display: block;
+        width: auto;
+        height: 70%;
+        margin-top: 0;
+    }
+    .resultado{
+        background-size: 70%;
+    }
+    footer{
+        margin-top: 6%;
+        margin-bottom: 0;
+        height: auto;
+    }
+}

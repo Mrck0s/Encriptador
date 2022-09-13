@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Encriptador</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <img class="logo" src="imagenes/Vectorlogo.png" alt="Logo Alura">
+            <h1 class="titulo">Encripta tu mensaje</h1>
+        </header>
+        
+        <main>
+            <section class="izquierda">
+                <textarea class="mensaje" type="text" placeholder="Ingrese el mensaje aquí..." onkeyup="javascript:this.value=this.value.toLowerCase();" pattern="[a-z]"></textarea>
+                <p class="condicion">&#9888 Únicamente letras minúsculas y sin acento.</p>
+                <button id="encriptar">Encriptar</button>
+                <button id="desencriptar">Desencriptar</button>
+            </section>
+            <section class="derecha">
+                <textarea class="resultado" placeholder="Esperando resultado..." onkeyup="javascript:this.value=this.value.toLowerCase()"></textarea>
+                <p class="rst">Resultado</p>
+                <button id="copiar">Copiar</button>
+            </section>
+
+        </main>
+
+        <footer>
+            <img class="letraM" src="imagenes/M.png" alt="M">
+            <p class="pie">Encriptador creado por Marcos F.</p>
+        </footer>
+
+        <script src="script.js"></script>
+    </body>
+</html>
